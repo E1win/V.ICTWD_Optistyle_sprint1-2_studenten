@@ -55,6 +55,7 @@
     .review .text {
         margin: 0 0 0.6rem 0;
         font-size: 1.05rem;
+        color: #000;
     }
 
     .review .meta {

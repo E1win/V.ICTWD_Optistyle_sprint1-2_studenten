@@ -57,6 +57,18 @@
                 <span asp-validation-for="Phone" class="validation-error" />
             </div>
 
+            <div class="form-group">
+                <label asp-for="Bericht" class="form-label"></label>
+                <input asp-for="Bericht"
+                       class="form-input"
+                       inputmode="text"
+                       aria-describedby="berichtHelp" />
+                <span id="berichtHelp" class="sr-only">
+                    Laat een bericht achter.
+                </span>
+                <span asp-validation-for="Bericht" class="validation-error" />
+            </div>
+
             <button type="submit" class="submit-button">Verstuur</button>
         </form>
 

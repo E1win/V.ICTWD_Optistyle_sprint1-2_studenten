@@ -18,6 +18,10 @@ namespace Website.Models
         [DataType(DataType.PhoneNumber)]
         public string? Phone { get; set; }
 
+        [Display(Name="Bericht")]
+        [Required(ErrorMessage = "Vul het bericht in")]
+        public string? Bericht { get; set; }
+
         // Honeypot veld
         public string? MiddleName { get; set; }
     }

@@ -6,7 +6,7 @@ namespace Website.Models
     {
         [Display(Name = "Voor- en achternaam")]
         [Required(ErrorMessage = "Vul uw voor- en achternaam in.")]
-        [StringLength(50, ErrorMessage = "Maximaal 50 tekens.")]
+        [StringLength(60, ErrorMessage = "Maximaal {1} tekens.")]
         // Unicode letters + spaties (accenten inbegrepen via \p{L})
         [RegularExpression(@"^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$", ErrorMessage = "Alleen letters en spaties zijn toegestaan.")]
         public string? Name { get; set; }

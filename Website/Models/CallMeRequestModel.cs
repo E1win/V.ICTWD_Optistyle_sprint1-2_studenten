@@ -12,7 +12,7 @@ namespace Website.Models
         public string? Name { get; set; }
 
         [Display(Name = "Telefoonnummer")]
-        [Required(ErrorMessage = "Vul uw telefoonnummer in.")]
+        [Required(ErrorMessage = "Vul uw {0} in.")]
         // Optioneel '+' aan het begin, daarna 1–15 cijfers (E.164-compatibel)
         [RegularExpression(@"^\+?[0-9]{1,15}$", ErrorMessage = "Vul een geldig telefoonnummer in (max. 15 cijfers, optioneel '+' aan het begin).")]
         [DataType(DataType.PhoneNumber)]
